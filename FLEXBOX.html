@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            width: 70%;
+            height: 540px;
+            border: 2px solid black;
+            display: flex;
+            margin-left: 200px;
+
+        }
+
+        .container-1 {
+            width: 300px;
+            height: 500px;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            align-content: center;
+            display: flex;
+        }
+
+        .green {
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blue {
+            margin-top: 150px;
+            margin-bottom: 150px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container-2 {
+            width: 600px;
+            height: 60px;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pink {
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blue1 {
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container-3 {
+            width: 250px;
+            height: 80px;
+            border: 1px solid black;
+            display: flex;
+            margin-right: 600px;
+        }
+
+        .container-4 {
+            width: 200px;
+            height: 230px;
+            border: 1px solid black;
+            display: flex;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cont4-box1 {
+            width: 10px;
+            height: 10px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container-1" style="flex-grow: 0;">
+            <div class="green" style="flex-grow: 1; background-color: rgb(50, 201, 50);"></div>
+            <div class="blue" style="flex-grow: 5;background-color: aqua;"></div>
+            <div class="green" style="flex-grow: 1; background-color: rgb(50, 201, 50);"></div>
+        </div>
+
+        <div class="container-2" style="align-self: flex-start">
+            <div class="pink" style="flex-grow: 1; background-color: pink;"></div>
+            <div class="blue1" style="flex-grow: 1; background-color: lightblue;"></div>
+        </div>
+        <!-- <div class="container-3" style="align-self: flex-end"></div> -->
+        <div class="container-4" style="align-self: flex-end">
+            <div class="cont4-box1" style="background-color: rgb(200, 127, 200);"></div>
+            <div class="cont4-box1" style="background-color: orange;"></div>
+            <div class="cont4-box1" style="background-color: orange;"></div>
+            <div class="cont4-box1" style="background-color: rgb(200, 127, 200);"></div>
+            <div class="cont4-box1" style="background-color: rgb(200, 127, 200);"></div>
+            <div class="cont4-box1" style="background-color: orange;"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
