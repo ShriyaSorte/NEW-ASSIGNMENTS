@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>NAVBARS</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        /* BBC CSS START */
+        .bbc-navbar {
+            background-color: black;
+            height: 60px;
+            width: 100%;
+            display: flex;
+        }
+
+        .bbc-logo {
+            border-right: 1px solid lightgray;
+            width: 110px;
+        }
+
+        .bbc-logo img {
+            height: 50px;
+            width: 100px;
+            margin: 5px;
+        }
+
+        .bbc-navbar li {
+            list-style-type: none;
+        }
+
+        .navbar-links {
+            margin-top: 20px;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            border-right: 1px solid lightgray;
+        }
+
+        .user {
+            margin-left: 20px;
+            /* margin-top: 0; */
+            width: 100px;
+            height: 60px;
+            border-right: 1px solid lightgray;
+        }
+
+        .user a {
+            text-decoration: none;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .user i {
+            margin-top: 20px;
+        }
+
+        .search {
+            color: black;
+            margin-left: 100px;
+            margin-top: 15px;
+            width: 200px;
+            height: 30px;
+            background-color: white;
+            padding-top: 8px;
+            padding-left: 3px;
+        }
+
+        /* BBC CSS END */
+
+        /* CNN CSS START */
+        .cnn-navbar {
+            height: 60px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+        }
+
+        .cnn-logo img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+
+        .cnn-links a {
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+        }
+
+        .cnn-links {
+            margin-top: 20px;
+        }
+
+        .edition a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .edition {
+            margin-top: 20px;
+            margin-left: 280px;
+        }
+
+        /* CNN CSS END */
+
+        /* LINKEDIN CSS START */
+        .linkedin-navbar {
+            height: 60px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+        }
+
+        .linkedin-navbar .icons {
+            padding-left: 25px;
+        }
+
+        .li-search {
+            color: black;
+            margin-left: 10px;
+            width: 200px;
+            height: 40px;
+            background-color: rgb(183, 223, 248);
+            margin-top: 10px;
+        }
+
+        .li-search a {
+            margin: 10px;
+        }
+
+        .icons1 {
+            padding-top: 20px;
+            padding-right: 10px;
+            border-right: 1px solid gray;
+            height: 40px;
+        }
+
+        .icons1 a {
+            text-decoration: none;
+            padding: 5px;
+            color: rgb(78, 78, 78);
+            margin-left: 80px;
+        }
+
+        #link-searchbar {
+            color: black;
+            width: 300px;
+            height: 25px;
+            /* margin-left: 20px; */
+            margin-top: 15px;
+            padding-left: 10px;
+            /* padding-top: 2px; */
+            background-color: rgb(239, 238, 238);
+            border-radius: 5px;
+            border: 0;
+        }
+
+        .end-btn {
+            margin-top: 20px;
+        }
+
+        .end-btn a {
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+            padding: 10px;
+            margin-left: 30px;
+        }
+
+        /* LINKEDIN CSS END */
+
+        /* INSTAGRAM CSS START */
+        .insta-navbar {
+            height: 60px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+        }
+
+        .insta-navbar img {
+            margin: 5px;
+        }
+
+        .searchbar {
+            margin-left: 350px;
+        }
+
+        .icons2 {
+            margin-left: 250px;
+            margin-top: 20px;
+        }
+
+        .icons2 a {
+            padding: 15px;
+        }
+
+        /* INSTAGRAM CSS END */
+
+        /* YOUTUBE CSS START */
+        .yt-navbar {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            display: flex;
+        }
+
+        .yt-navbar img {
+            height: 40px;
+            width: 160px;
+            margin: 10px;
+            margin-left: 20px;
+        }
+
+        .start a {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            margin-left: 25px;
+        }
+
+        .start {
+            padding-top: 20px;
+        }
+
+        .fg--search input {
+            width: 220px;
+            height: 1px;
+            margin-top: 5px;
+            padding: 20px 60px 20px 20px;
+            display: block;
+            margin-left: 100px;
+        }
+
+        .fg--search button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 14px 20px;
+            z-index: 2;
+            color: black;
+        }
+
+        .yt-icons {
+            margin-left: 300px;
+            margin-top: 20px;
+        }
+
+        .yt-icons a {
+            text-decoration: none;
+            color: black;
+            padding: 25px;
+        }
+
+        /* YOUTUBE CSS END */
+
+        /* FACEBOOK CSS START */
+        .fb-navbar {
+            height: 60px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+        }
+
+        .fb-navbar img {
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            margin-left: 20px;
+        }
+
+        .search-icon {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: lightgray;
+            margin-top: 5px;
+        }
+
+        .search-icon a {
+            /* padding-top: 30px; */
+            margin-left: 17px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .fb-icons1 {
+            margin-left: 140px;
+            margin-top: 20px;
+        }
+
+        .fb-icons1 a {
+            padding: 45px;
+            color: rgb(65, 65, 65);
+        }
+
+        .plus {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: lightgray;
+            margin-top: 5px;
+            margin-left: 110px;
+            text-align: center;
+        }
+
+        .plus a {
+            padding-top: 20px;
+            margin-left: 1px;
+            text-decoration: none;
+            color: black;
+            /* text-align: center; */
+        }
+
+        .messenger {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: lightgray;
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+
+        .messenger a {
+            padding-top: 20px;
+            margin-left: 17px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .bell {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: lightgray;
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+
+        .bell a {
+            padding-top: 20px;
+            margin-left: 17px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .down {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: lightgray;
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+
+        .down a {
+            padding-top: 20px;
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* FACEBOOK CSS END */
+
+        /* GMAIL CSS START */
+        .menu {
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+        }
+
+        .gmail-navbar {
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            display: flex;
+        }
+
+        .gmail-navbar img {
+            width: 130px;
+            height: 40px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        .gmail-navbar .search-container {
+            color: black;
+            /* width: 600px; */
+            /* height: 40px; */
+            margin-left: 100px;
+            margin-top: 10px;
+            padding-left: 30px;
+            padding-top: 2px;
+
+            border-radius: 5px;
+            border: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .gmail-navbar .search-container input[type=text] {
+            padding: 10px;
+            width: 500px;
+            height: 20px;
+            border: none;
+            background-color: rgb(239, 238, 238);
+        }
+
+        .gmail-navbar .search-container button {
+            padding: 10px 20px;
+            color: black;
+            border: none;
+            height: 40px;
+
+        }
+        .icons3{
+            margin-top: 25px;
+            margin-left: 60px;
+        }
+        .icons3 a{
+            text-decoration: none;
+            color: black;
+            padding: 6px;
+            margin-left: 40px;
+        }
+        /* GMAIL CSS END */
+
+        /* BOOTSTRAP CSS START */
+        .bs-navbar{
+            width: 100%;
+            height: 60px;
+            background-color: #5c3c8d;
+            display: flex;
+        }
+        .bs-navbar img{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        .bs-links{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .bs-links a{
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+        .version{
+            margin-top: 20px;
+            margin-left: 170px;
+        }
+        .version a{
+            text-decoration: none;
+            color: white;
+        }
+        .bs-third{
+            margin-top: 20px;
+            margin-left: 35px;
+        }
+        .bs-third a{
+            text-decoration: none;
+            padding: 15px;
+            color: white;
+        }
+        .btn{
+            margin-top: 12px;
+            margin-left: 20px;
+        }
+        button{
+            color: yellow;
+            background-color: #5c3c8d;
+            border: 1px solid yellow;
+            padding: 10px;
+        }
+        /* BOOTSTRAP CSS END */
+
+        /* MEDIUM CSS START */
+        .med-navbar{
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            display: flex;
+        }
+        .med-links{
+            margin-top: 25px;
+            margin-left: 800px;
+        }
+        .med-links a{
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+        }
+        /* MEDIUM CSS END */
+    </style>
+</head>
+
+<body>
+    <!-- BBC NAVBAR START -->
+    <nav class="bbc-navbar">
+        <div class="bbc-logo">
+            <img src="./IMAGES/BBC.png" alt="BBC Logo">
+        </div>
+        <div class="user">
+            <a href="#"><i class="fa-regular fa-user"></i>&nbsp;&nbsp; Sign in</a>
+        </div>
+        <div class="navbar-links">
+            <a href="#">News</a>
+            <a href="#">Sport</a>
+            <a href="#">Reel</a>
+            <a href="#">Worklife</a>
+            <a href="#">Travel</a>
+            <a href="#">Future</a>
+            <a href="#">More</a>
+        </div>
+        <div class="search">
+            Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+    <hr>
+    <!-- BBC NAVBAR END -->
+
+    <!-- CNN NAVBAR START -->
+    <div class="cnn-navbar">
+        <div class="cnn-logo">
+            <img src="./IMAGES/cnn.png" alt="CNN logo">
+        </div>
+        <div class="cnn-links">
+            <a href="#">World</a>
+            <a href="#">US</a>
+            <a href="#">Politics</a>
+            <a href="#">Business</a>
+            <a href="#">Health</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Style</a>
+            <a href="#">Travel</a>
+            <a href="#">Sports</a>
+            <a href="#">Videos</a>
+        </div>
+        <div class="edition">
+            <a href="#">Edition</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </div>
+    <hr>
+    <!-- CNN NAVBAR END -->
+
+
+    <!-- LINKEDIN NAVBAR START -->
+    <div class="linkedin-navbar">
+        <div class="linkedin-logo">
+            <img src="./IMAGES/linkedin.png" style="height: 50px; width: 50px; margin: 5px;">
+        </div>
+        <!-- <div class="li-search">
+            <a><i class="fa-solid fa-magnifying-glass"></i>Search.. </a>
+        </div> -->
+
+        <div class="icons">
+            <input type="text" id="link-searchbar" placeholder="&#128270; Search"
+                style="font-family:Arial,FontAwesome" />
+        </div>
+        <div class="icons1">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+            <a href="#"><i class="fa-solid fa-user-group"></i></a>
+            <a href="#"><i class="fa-solid fa-briefcase"></i></a>
+            <a href="#"><i class="fa-solid fa-comment-dots"></i></a>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+        <div class="end-btn">
+            <a href="#"><i class="fa-solid fa-table-cells"></i></a>
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+        </div>
+    </div>
+    <hr>
+    <!-- LINKEDIN NAVBAR END -->
+
+    <!-- INSTAGRAM NAVBAR START -->
+    <div class="insta-navbar">
+        <div class="insta-logo">
+            <img src="./IMAGES/instagram.png" style="height: 50px; width: 120px;">
+        </div>
+        <div class="searchbar">
+            <input type="text" id="link-searchbar" placeholder="&#128270; Search"
+                style="font-family:Arial,FontAwesome; width: 200px; text-align: center; border: 1px solid black;" />
+        </div>
+        <div class="icons2">
+            <a><i class="fa-solid fa-house"></i></a>
+            <a><i class="fa-regular fa-paper-plane"></i></a>
+            <a><i class="fa-regular fa-compass"></i></a>
+            <a><i class="fa-regular fa-heart"></i></a>
+            <a><i class="fa-regular fa-circle-user"></i></a>
+        </div>
+    </div>
+    <hr>
+    <!-- INSTAGRAM NAVBAR END -->
+
+    <!-- YOUTUBE NAVBAR START -->
+    <div class="yt-navbar">
+        <div class="start">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="yt-logo">
+            <img src="./IMAGES/youtube.png">
+        </div>
+        <div class="form-group fg--search">
+            <input type="text" class="input" placeholder="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="yt-icons">
+            <a href=""><i class="fa-solid fa-video"></i></a>
+            <a href=""><i class="fa-solid fa-table-cells"></i></a>
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+            <a href=""><i class="fa-regular fa-circle-user"></i></a>
+        </div>
+    </div>
+    <hr>
+    <!-- YOUTUBE NAVBAR END -->
+
+    <!-- FACEBOOK NAVBAR START -->
+    <div class="fb-navbar">
+        <div class="fb-logo">
+            <img src="./IMAGES/facebook.png">
+        </div>
+        <div class="search-icon">
+            <a href="#"><i class="fa-solid fa-magnifying-glass" style="margin-top: 17px;"></i></a>
+        </div>
+        <div class="fb-icons1">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+            <a href="#"><i class="fa-regular fa-flag"></i></a>
+            <a href="#"><i class="fa-solid fa-tv"></i></a>
+            <a href="#"><i class="fa-solid fa-store"></i></a>
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="plus">
+            <a href="#"><i class="fa-solid fa-plus" style="margin-top: 17px;"></i></a>
+        </div>
+        <div class="messenger">
+            <a href="#"><i class="fa-brands fa-facebook-messenger" style="margin-top: 17px;"></i></a>
+        </div>
+        <div class="bell">
+            <a href="#"><i class="fa-solid fa-bell" style="margin-top: 17px;"></i></a>
+        </div>
+        <div class="down">
+            <a href="#"><i class="fa-solid fa-caret-down" style="margin-top: 17px;"></i></a>
+        </div>
+    </div>
+    <hr>
+    <!-- FACEBOOK NAVBAR END -->
+
+    <!-- GMAIL NAVBAR START -->
+    <div class="gmail-navbar">
+        <div class="menu">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="gmail-logo">
+            <img src="./IMAGES/gmail2.png">
+        </div>
+        <div class="search-container">
+            <input type="text" id="input" placeholder="Search mail &nbsp;" />
+            <button><i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <div class="icons3">
+            <a href="#"><i class="fa-regular fa-circle-question"></i></a>
+            <a href="#"><i class="fa-solid fa-gear"></i></a>
+            <a href="#"><i class="fa-solid fa-table-cells"></i></a>
+            <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+        </div>
+    </div><hr>
+    <!-- GMAIL NAVBAR END -->
+
+    <!-- BOOTSTRAP NAVBAR START -->
+    <div class="bs-navbar">
+        <div class="bs-logo">
+            <img src="./IMAGES/bootstrap.jpg">
+        </div>
+        <div class="bs-links">
+            <a href="#">Home</a>
+            <a href="#">Documentation</a>
+            <a href="#">Examples</a>
+            <a href="#">Icons</a>
+            <a href="#">Themes</a>
+            <a href="#">Expo</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="bs-second">
+            <div class="version">
+                <a href="#">v4.5</a>
+                <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+            </div>
+        </div>
+        <div class="bs-third">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-solid fa-hashtag"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-notch"></i></a>
+        </div>
+        <div class="btn">
+            <a href="#"><button>Download</button></a>
+        </div>
+    </div><hr>
+    <!-- BOOTSTRAP NAVBAR END -->
+
+    <!-- MEDIUM NAVBAR START -->
+    <div class="med-navbar">
+        <div class="med-logo">
+            <img src="./IMAGES/medium.png" style="width: 200px; margin-top: 7px;">
+        </div>
+        <div class="med-links">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+            <a href="#"></a>
+        </div>
+    </div>
+    <!-- MEDIUM NAVBAR END -->
+</body>
+
+</html>
