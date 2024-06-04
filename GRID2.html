@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            height: 500px;
+            width: 600px;
+            row-gap: 5px;
+            column-gap: 5px;
+            justify-content: center;
+            margin-left: 300px;
+            margin-top: 30px;
+            /* background-color: whitesmoke; */
+        }
+        .container img{
+            height: 150px;
+            width: 150px;
+            border: 1px solid gray;
+            transition: all 1s;
+        }
+        .container img:hover{
+            scale: 1.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./FRUITS/avocado.jpg">
+        <img src="./FRUITS/dragon fruit.jpg">
+        <img src="./FRUITS/kiwi.jpg">
+        <img src="./FRUITS/mango.jpg">
+        <img src="./FRUITS/orange.jpg">
+        <img src="./FRUITS/watermelon.jpg">
+        <img src="./FRUITS/apple.jpg">
+        <img src="./FRUITS/banana.jpg">
+        <img src="./FRUITS/guava.jpg">
+    </div>
+</body>
+</html>
