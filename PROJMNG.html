@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT MANAGEMENT</title>
+    <style>
+        h1{
+            text-decoration: underline;
+            margin-left: 90px;
+        }
+        div{
+            background-color:rgb(32, 239, 218);
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+        }
+        .project{
+            text-align: left;
+            margin-left: 40px;
+            padding: 50px;
+        }
+        input[type="radio"] {
+         display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Management</h1>
+    <div class="project">
+    <form>
+        <table>
+            <tr>
+            <th><label for="proj">Project Name:</label></th> 
+            <td><input type="text" id="proj" name="proj" value="project name"></td>
+            </tr>
+            <tr>
+            <th><label for="assi">Assigned to:</label></th>
+            <td><select id="assi">
+                <option value="er merry petison">Er Merry Petison</option>
+                <option value="analyst">Analyst</option>
+                <option value="programmer">Programmer</option>
+                <option value="engineer">Engineer</option>
+                <option value="manager">Manager</option>
+                <option value="ceo">CEO</option></td>
+            </tr>    
+            <tr>
+                <th><label for="date">Start Date:</label></th>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <tr>
+                <th><label for="date">End Date:</label></th>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <tr>
+                <th><label>Priority:</label></th>
+                <td><input type="radio" name="priority" id="priority">High
+                <input type="radio" name="priority">Average
+                <input type="radio" name="priority" value="low">Low</td>
+            </tr>
+            <tr>
+                <th><label>Description:</label></th>
+                <td><textarea></textarea></td>
+            </tr>
+            <td><input type="submit"></td>
+            <td><input type="reset"></td>
+        </table>   
+    </form>
+    </div>
+</body>
+</html>
