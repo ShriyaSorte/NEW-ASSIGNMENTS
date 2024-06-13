@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID EXAMPLE</title>
+    <style>
+        .gallery {
+            --s: 150px;
+            /* control the size */
+
+            display: grid;
+            gap: 10px;
+            /* control the gap */
+            grid: auto-flow var(--s)/repeat(3, var(--s));
+            place-items: center;
+            margin: calc(var(--s)/4);
+        }
+
+        .gallery img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+        .gallery img:nth-child(odd) {
+            border-radius: 50%;
+            width: 141%;
+        }
+
+        .gallery>img:nth-child(even) {
+            --_r: calc(var(--s)/1.414) at;
+            --_g: calc(var(--s)/-2), #000 99%, #0000;
+            --_m:
+                radial-gradient(var(--_r) left 50% bottom var(--_g)),
+                radial-gradient(var(--_r) left 50% top var(--_g)),
+                radial-gradient(var(--_r) top 50% right var(--_g)),
+                radial-gradient(var(--_r) top 50% left var(--_g)),
+                linear-gradient(#000 0 0);
+            -webkit-mask: var(--_m);
+            mask: var(--_m);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+        }
+
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-content: center;
+            background: #15e03a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="./ANIMALS/bear.jpg" alt="">
+        <img src="./ANIMALS/clouds.jpg" alt="">
+        <img src="./ANIMALS/leopard.jpg" alt="">
+        <img src="./ANIMALS/sunset.jpg" alt="">
+        <img src="./ANIMALS/lion.jpg" alt="">
+        <img src="./ANIMALS/trees.jpg" alt="">
+        <img src="./ANIMALS/tiger.jpg" alt="">
+        <img src="./ANIMALS/water.jpg" alt="">
+        <img src="./ANIMALS/wolf.jpg" alt="">
+    </div>
+</body>
+
+</html>
